@@ -11,4 +11,6 @@ header.pb-3.mb-4.border-bottom img {
     margin-right: 10px;
 }
 
-
+.bg-color {
+    background: #000 !important;
+}
