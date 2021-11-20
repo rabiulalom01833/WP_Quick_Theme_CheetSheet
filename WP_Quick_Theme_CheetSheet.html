@@ -32,9 +32,9 @@
     </div>
 
     <div class="main_wrapper">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-3">
                     <div class="d-flex flex-column align-items-start flex-shrink-0 bg-white" style="width: 380px;">
                         <a href="/" class="d-flex align-items-start flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
                           <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
@@ -61,16 +61,93 @@
                 
                 </div>
 
-                <div class="col-xl-8">
+                <div class="col-xl-9">
                     <div class="container-fluid">
                         <div class="row">
+                            <div class="col-xl-12">
+                              <header class="pb-3 mb-4 border-bottom ">
+                                <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+                                  <span class="fs-4"> ওয়ার্ডপ্রেস থিম বেসিক টেমপ্লেট ফাইল [ Template Files ] </span>
+                                </a>
+                              </header>
+                            </div>
+                            <!-- <div class="col-xl-12">
+                               <div class="template_hracy ">
 
-                            <div class="col-xl-6">
+                                  <div class="h-100 p-5 bg-light border rounded-3 shadow p-3 mb-3 bg-body rounded">
+                                     <img class="img-fluid " src="https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png" alt="">
+                                  </div>
+                               </div>
+                            </div> -->
+                            <div class="col-xl-12">
+                              <div class="  p-10 bg-light border   shadow p-3 mb-3 bg-body rounded">
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">টেম্পলেট ফাইল নাম </th>
+                                      <th scope="col">টেম্পলেট ফাইল ব্যবহার </th>
+                                       
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">index.php</th>
+                                      <td> INDEX.PHP ফাইলকে স্ট্যাটিক হোম অথবা ব্লগকে পেজ জন্য ব্যবহার করা হয়  </td> 
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">style.css</th>
+                                      <td>  থিম নাম , থিম এর অথর নাম , থিম ক্যাটাগরি সহ , থিম এর ডিটেলস লিখতে স্টাইল STYLE.CSS ফাইল ব্যবহার করা হয় .  </td> 
+                                    </tr>
+                                     
+                                    <tr>
+                                      <th scope="row">page.php</th>
+                                      <td> হোম ও ব্লগ পেজ ছাড়া বাকি পেজ জন্য PAGE.PHP ব্যবহার করা হয়  </td> 
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">single.php</th>
+                                      <td> ওয়ার্ডপ্রেস এর পোস্টকে বিস্তারিত দেখানোর জন্য SINGLE.PHP ব্যবহার করা হয়  </td> 
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">archive.php</th>
+                                      <td>ওয়ার্ডপ্রেস এর পোস্টকে অথর , ক্যাটাগরি , তারিখ হিসাবে এ আলাদা দেখানো জন্য ACCHIVE.PHP ব্যবহার করা হয় </td> 
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">search.php</th>
+                                      <td>ওয়ার্ডপ্রেস থিম এ পোস্ট পেজ অথবা নিদিষ্ট কনটেন্ট দেখানোর জন্য  SEARCH.PHP ব্যবহার করা হয়</td> 
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">searchform.php</th>
+                                      <td>সার্চ ফর্ম ফাইল</td> 
+                                    </tr>
+                                    
+                                   <tr>
+                                      <th scope="row">404.php</th>
+                                      <td> ওয়ার্ডপ্রেস থিম এ পোস্ট পেজ অথবা নিদিষ্ট কনটেন্ট  সার্চ করে খুঁজে না পাওয়া গেলে 404.php ব্যবহার করা হয়</td> 
+                                    </tr>
+                                   
+                                    
+                                    <tr>
+                                      <th scope="row">header.php</th>
+                                      <td> একটি ওয়েবসাইট এ হেডার পার্ট একই হয় , তাই হেডার সব পেজ এ বার বার লোড না করে হেডার পেজ হতে একবার লোড করা জন্য হেডার পেজ ব্যবহার করা হয়  </td> 
+                                    </tr>
+
+                                    <tr>
+                                      <th scope="row">footer.php</th>
+                                      <td>একটি ওয়েবসাইট এ ফুটার পার্ট একই হয় , তাই ফুটার সব পেজ এ বার বার লোড না করে ফুটার পেজ হতে একবার লোড করা জন্য ফুটার পেজ ব্যবহার করা হয় </td> 
+                                    </tr>
+
+                                    <tr>
+                                      <th scope="row">sidebar.php</th>
+                                      <td> একটি ওয়েবসাইট এ সাইডবার পার্ট একই হয় , তাই সাইডবার সব পেজ এ বার বার লোড না করে , সাইডবার পেজ হতে একবার লোড করা জন্য সাইডবার পেজ ব্যবহার করা হয় . </td> 
+                                    </tr>
+ 
+                                     
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
                            
-                            </div>
-                            <div class="col-xl-6">
-                                
-                            </div>
                         </div>
                     </div>
                 </div>
