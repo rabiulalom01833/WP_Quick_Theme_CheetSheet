@@ -601,49 +601,64 @@
          
           <div class="col-xl-12 pt-10">
             <div class="card"> 
-              <code class="language-php">  
-                if ( ! function_exists( 'myfirsttheme_setup' ) ) : <br>
-                /** <br>
-                 * Sets up theme defaults and registers support for various WordPress features. <br>
-                 * <br>
-                 * Note that this function is hooked into the after_setup_theme hook, which runs <br>
-                 * before the init hook. The init hook is too late for some features, such as indicating <br>
-                 * support post thumbnails. <br>
-                 */ <br>
-                function myfirsttheme_setup() { <br>
+              <code class="language-php"> 
+
+                  if ( ! function_exists( 'myfirsttheme_setup' ) ) : <br>
                   
-                    /** <br>
-                     * Make theme available for translation. <br>
-                     * Translations can be placed in the /languages/ directory. <br>
-                     */ <br>
-                    load_theme_textdomain( 'myfirsttheme', get_template_directory() . '/languages' ); <br>
+                  function myfirsttheme_setup() { <br> <br>
+                    /** automatic feed link*/ <br>  
+                    add_theme_support( 'automatic-feed-links' ); <br> <br>
                  
-                    /** <br>
-                     * Add default posts and comments RSS feed links to <head>. <br>
-                     */
-                    add_theme_support( 'automatic-feed-links' ); <br>
+                    /** tag-title **/ <br> 
+                    add_theme_support( 'title-tag' ); <br> <br>
                  
-                    /**
-                     * Enable support for post thumbnails and featured images. <br>
-                     */
-                    add_theme_support( 'post-thumbnails' ); <br>
+                    /** post formats */ <br>  
+                    $post_formats = array('aside','image','gallery','video','audio','link','quote','status'); <br>
+                    add_theme_support( 'post-formats', $post_formats); <br> <br>
                  
-                    /**  <br>
-                     * Add support for two custom navigation menus. <br>
-                     */<br>
-                    register_nav_menus( array( <br>
-                        'primary'   => __( 'Primary Menu', 'myfirsttheme' ),  <br>
-                        'secondary' => __('Secondary Menu', 'myfirsttheme' ) <br>
+                    /** post thumbnail **/ <br>  
+                    add_theme_support( 'post-thumbnails' ); <br> <br>
+                 
+                    /** HTML5 support **/ <br>  
+                    add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) ); <br> <br>
+                 
+                    /** refresh widgest **/ <br>  
+                    add_theme_support( 'customize-selective-refresh-widgets' ); <br> <br>
+                 
+                    /** custom background **/ <br> 
+                    $bg_defaults = array(
+                        'default-image'          => '', <br>
+                        'default-preset'         => 'default', <br>
+                        'default-size'           => 'cover', <br>
+                        'default-repeat'         => 'no-repeat', <br>
+                        'default-attachment'     => 'scroll', <br>
+                    );
+                    add_theme_support( 'custom-background', $bg_defaults ); <br> <br>
+                 
+                    /** custom header **/ <br>  
+                    $header_defaults = array( <br> 
+                        'default-image'          => '', <br>
+                        'width'                  => 300, <br>
+                        'height'                 => 60, <br>
+                        'flex-height'            => true, <br>
+                        'flex-width'             => true, <br>
+                        'default-text-color'     => '', <br>
+                        'header-text'            => true, <br>
+                        'uploads'                => true, <br> 
+                    );
+                    add_theme_support( 'custom-header', $header_defaults ); <br> <br>
+                 
+                    /** custom log **/ <br>  
+                    add_theme_support( 'custom-logo', array( <br>
+                        'height'      => 60, <br>
+                        'width'       => 400, <br>
+                        'flex-height' => true, <br>
+                        'flex-width'  => true, <br>
+                        'header-text' => array( 'site-title', 'site-description' ), <br>
                     ) ); <br>
-                  
-                    /** <br>
-                     * Enable support for the following post formats: <br>
-                     * aside, gallery, quote, image, and video <br>
-                     */ <br>
-                    add_theme_support( 'post-formats', array ( 'aside', 'gallery', 'quote', 'image', 'video' ) ); <br>
-                }
-                endif; // myfirsttheme_setup <br>
-                add_action( 'after_setup_theme', 'myfirsttheme_setup' ); <br>
+                  }  <br>
+                  endif; // myfirsttheme_setup <br>
+                  add_action( 'after_setup_theme', 'myfirsttheme_setup' ); <br>
               </code>
   
               
