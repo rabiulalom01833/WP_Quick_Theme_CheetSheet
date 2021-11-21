@@ -617,63 +617,62 @@
             <div class="card">
               <code class="language-php">
 
-                if ( ! function_exists( 'myfirsttheme_setup' ) ) : <br>
+                if ( ! function_exists( 'myfirsttheme_setup' ) ) : <br> <br>
 
-                function myfirsttheme_setup() { <br> <br>
-                /** automatic feed link*/ <br>
-                add_theme_support( 'automatic-feed-links' ); <br> <br>
+                &nbsp; function myfirsttheme_setup() { <br> <br>
+                  &nbsp;&nbsp;/** automatic feed link*/ <br>
+                  &nbsp;&nbsp;add_theme_support( 'automatic-feed-links' ); <br> <br>
 
-                /** tag-title **/ <br>
-                add_theme_support( 'title-tag' ); <br> <br>
+                  &nbsp;&nbsp;/** tag-title **/ <br>
+                  &nbsp;&nbsp;add_theme_support( 'title-tag' ); <br> <br>
 
-                /** post formats */ <br>
-                $post_formats = array('aside','image','gallery','video','audio','link','quote','status'); <br>
-                add_theme_support( 'post-formats', $post_formats); <br> <br>
+                  &nbsp;&nbsp;/** post formats */ <br>
+                  &nbsp;&nbsp;$post_formats = array('aside','image','gallery','video','audio','link','quote','status'); <br>
+                  &nbsp;&nbsp;add_theme_support( 'post-formats', $post_formats); <br> <br>
 
-                /** post thumbnail **/ <br>
-                add_theme_support( 'post-thumbnails' ); <br> <br>
+                  &nbsp;&nbsp;/** post thumbnail **/ <br>
+                  &nbsp;&nbsp;add_theme_support( 'post-thumbnails' ); <br> <br>
 
-                /** HTML5 support **/ <br>
-                add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' )
-                ); <br> <br>
+                  &nbsp;&nbsp;/** HTML5 support **/ <br>
+                  &nbsp;&nbsp;add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' )
+                  &nbsp;&nbsp;); <br> <br>
 
-                /** refresh widgest **/ <br>
-                add_theme_support( 'customize-selective-refresh-widgets' ); <br> <br>
+                  &nbsp;&nbsp;/** refresh widgest **/ <br>
+                  &nbsp;&nbsp;add_theme_support( 'customize-selective-refresh-widgets' ); <br> <br>
 
-                /** custom background **/ <br>
-                $bg_defaults = array(
-                'default-image' => '', <br>
-                'default-preset' => 'default', <br>
-                'default-size' => 'cover', <br>
-                'default-repeat' => 'no-repeat', <br>
-                'default-attachment' => 'scroll', <br>
-                );
-                add_theme_support( 'custom-background', $bg_defaults ); <br> <br>
+                  &nbsp;&nbsp;/** custom background **/ <br>
+                  &nbsp;&nbsp;$bg_defaults = array( <br>
+                  &nbsp; &nbsp;&nbsp; 'default-image' => '', <br>
+                  &nbsp; &nbsp;&nbsp;'default-preset' => 'default', <br>
+                  &nbsp; &nbsp;&nbsp;'default-size' => 'cover', <br>
+                  &nbsp; &nbsp;&nbsp;'default-repeat' => 'no-repeat', <br>
+                  &nbsp; &nbsp;&nbsp;'default-attachment' => 'scroll', <br>
+                &nbsp;&nbsp; ); <br>
+               &nbsp;&nbsp; add_theme_support( 'custom-background', $bg_defaults ); <br> <br>
 
-                /** custom header **/ <br>
-                $header_defaults = array( <br>
-                'default-image' => '', <br>
-                'width' => 300, <br>
-                'height' => 60, <br>
-                'flex-height' => true, <br>
-                'flex-width' => true, <br>
-                'default-text-color' => '', <br>
-                'header-text' => true, <br>
-                'uploads' => true, <br>
-                );
-                add_theme_support( 'custom-header', $header_defaults ); <br> <br>
+               &nbsp;&nbsp; /** custom header **/ <br>
+               &nbsp;  &nbsp;&nbsp;$header_defaults = array( <br>
+               &nbsp;  &nbsp;&nbsp;'default-image' => '', <br>
+               &nbsp;  &nbsp;&nbsp; 'width' => 300, <br>
+               &nbsp;  &nbsp;&nbsp; 'height' => 60, <br>
+               &nbsp;  &nbsp;&nbsp; 'flex-height' => true, <br>
+               &nbsp;  &nbsp;&nbsp; 'flex-width' => true, <br>
+               &nbsp;  &nbsp;&nbsp; 'default-text-color' => '', <br>
+               &nbsp;  &nbsp;&nbsp; 'header-text' => true, <br>
+               &nbsp;  &nbsp;&nbsp;  'uploads' => true, <br>
+               &nbsp;&nbsp;); <br>
+               &nbsp;&nbsp; add_theme_support( 'custom-header', $header_defaults ); <br> <br>
 
-                /** custom log **/ <br>
-                add_theme_support( 'custom-logo', array( <br>
-                'height' => 60, <br>
-                'width' => 400, <br>
-                'flex-height' => true, <br>
-                'flex-width' => true, <br>
-                'header-text' => array( 'site-title', 'site-description' ), <br>
-                ) ); <br>
-                } <br>
-                endif; // myfirsttheme_setup <br>
-                add_action( 'after_setup_theme', 'myfirsttheme_setup' ); <br>
+          &nbsp;&nbsp; /** custom log **/ <br>
+             &nbsp;&nbsp;  add_theme_support( 'custom-logo', array( <br>
+               &nbsp;  &nbsp;&nbsp;  'height' => 60, <br>
+               &nbsp;  &nbsp;&nbsp;  'width' => 400, <br>
+               &nbsp;  &nbsp;&nbsp;   'flex-height' => true, <br>
+               &nbsp;  &nbsp;&nbsp;   'flex-width' => true, <br>
+               &nbsp;  &nbsp;&nbsp;   'header-text' => array( 'site-title', 'site-description' ), <br>
+              &nbsp;&nbsp;   )); <br>
+              &nbsp;&nbsp;  endif; // myfirsttheme_setup <br>
+               &nbsp;&nbsp;  add_action( 'after_setup_theme', 'myfirsttheme_setup' ); <br>
               </code>
 
 
@@ -703,16 +702,16 @@
               <code class="language-php">
                 if ( ! function_exists( 'mytheme_register_nav_menu' ) ) { <br />
 
-                function mytheme_register_nav_menu(){ <br /> <br />
-                /** Multiple Menus **/ <br>
-                register_nav_menus( array( <br />
-                'primary_menu' => __( 'Primary Menu', 'text_domain' ), <br />
-                'footer_menu' => __( 'Footer Menu', 'text_domain' ), <br />
-                ) ); <br /> <br />
+               &nbsp;&nbsp; function mytheme_register_nav_menu(){ <br /> <br />
+                &nbsp;  &nbsp;&nbsp;/** Multiple Menus **/ <br>
+                  &nbsp;&nbsp; register_nav_menus( array( <br />
+                &nbsp;  &nbsp;&nbsp;'primary_menu' => __( 'Primary Menu', 'text_domain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'footer_menu' => __( 'Footer Menu', 'text_domain' ), <br />
+                 &nbsp;&nbsp; ) ); <br /> <br />
 
                 } <br />
-                add_action( 'after_setup_theme', 'mytheme_register_nav_menu', 0 ); <br />
-                }
+                add_action( 'after_setup_theme', 'mytheme_register_nav_menu', 0 ); 
+                }<br />
               </code>
             </div>
           </div>
@@ -741,57 +740,57 @@
                 function wpdocs_codex_book_init() { <br /> <br />
                 $labels = array(
                 'name' => _x( 'Books', 'Post type general name', 'textdomain' ), <br />
-                'singular_name' => _x( 'Book', 'Post type singular name', 'textdomain' ), <br />
-                'menu_name' => _x( 'Books', 'Admin Menu text', 'textdomain' ), <br />
-                'name_admin_bar' => _x( 'Book', 'Add New on Toolbar', 'textdomain' ), <br />
-                'add_new' => __( 'Add New', 'textdomain' ), <br />
-                'add_new_item' => __( 'Add New Book', 'textdomain' ), <br />
-                'new_item' => __( 'New Book', 'textdomain' ), <br />
-                'edit_item' => __( 'Edit Book', 'textdomain' ), <br />
-                'view_item' => __( 'View Book', 'textdomain' ), <br />
-                'all_items' => __( 'All Books', 'textdomain' ), <br />
-                'search_items' => __( 'Search Books', 'textdomain' ), <br />
-                'parent_item_colon' => __( 'Parent Books:', 'textdomain' ), <br />
-                'not_found' => __( 'No books found.', 'textdomain' ), <br />
-                'not_found_in_trash' => __( 'No books found in Trash.', 'textdomain' ), <br />
-                'featured_image' => _x( 'Book Cover Image', 'Overrides the “Featured Image” phrase for this post type.
+                &nbsp;  &nbsp;&nbsp; 'singular_name' => _x( 'Book', 'Post type singular name', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'menu_name' => _x( 'Books', 'Admin Menu text', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'name_admin_bar' => _x( 'Book', 'Add New on Toolbar', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'add_new' => __( 'Add New', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'add_new_item' => __( 'Add New Book', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'new_item' => __( 'New Book', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'edit_item' => __( 'Edit Book', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'view_item' => __( 'View Book', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'all_items' => __( 'All Books', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'search_items' => __( 'Search Books', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'parent_item_colon' => __( 'Parent Books:', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'not_found' => __( 'No books found.', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'not_found_in_trash' => __( 'No books found in Trash.', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'featured_image' => _x( 'Book Cover Image', 'Overrides the “Featured Image” phrase for this post type.
                 Added in 4.3', 'textdomain' ), <br />
-                'set_featured_image' => _x( 'Set cover image', 'Overrides the “Set featured image” phrase for this post
+                &nbsp;  &nbsp;&nbsp; 'set_featured_image' => _x( 'Set cover image', 'Overrides the “Set featured image” phrase for this post
                 type. Added in 4.3', 'textdomain' ), <br />
-                'remove_featured_image' => _x( 'Remove cover image', 'Overrides the “Remove featured image” phrase for
+                &nbsp;  &nbsp;&nbsp; 'remove_featured_image' => _x( 'Remove cover image', 'Overrides the “Remove featured image” phrase for
                 this post type. Added in 4.3', 'textdomain' ), <br />
-                'use_featured_image' => _x( 'Use as cover image', 'Overrides the “Use as featured image” phrase for this
+                &nbsp;  &nbsp;&nbsp; 'use_featured_image' => _x( 'Use as cover image', 'Overrides the “Use as featured image” phrase for this
                 post type. Added in 4.3', 'textdomain' ), <br />
-                'archives' => _x( 'Book archives', 'The post type archive label used in nav menus. Default “Post
+                &nbsp;  &nbsp;&nbsp; 'archives' => _x( 'Book archives', 'The post type archive label used in nav menus. Default “Post
                 Archives”. Added in 4.4', 'textdomain' ), <br />
-                'insert_into_item' => _x( 'Insert into book', 'Overrides the “Insert into post”/”Insert into page”
+                &nbsp;  &nbsp;&nbsp; 'insert_into_item' => _x( 'Insert into book', 'Overrides the “Insert into post”/”Insert into page”
                 phrase (used when inserting media into a post). Added in 4.4', 'textdomain' ), <br />
-                'uploaded_to_this_item' => _x( 'Uploaded to this book', 'Overrides the “Uploaded to this post”/”Uploaded
+                &nbsp;  &nbsp;&nbsp; 'uploaded_to_this_item' => _x( 'Uploaded to this book', 'Overrides the “Uploaded to this post”/”Uploaded
                 to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'textdomain' ), <br />
-                'filter_items_list' => _x( 'Filter books list', 'Screen reader text for the filter links heading on the
+                &nbsp;  &nbsp;&nbsp; 'filter_items_list' => _x( 'Filter books list', 'Screen reader text for the filter links heading on the
                 post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'textdomain'
                 ), <br />
-                'items_list_navigation' => _x( 'Books list navigation', 'Screen reader text for the pagination heading
+                &nbsp;  &nbsp;&nbsp; 'items_list_navigation' => _x( 'Books list navigation', 'Screen reader text for the pagination heading
                 on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4',
                 'textdomain' ), <br />
-                'items_list' => _x( 'Books list', 'Screen reader text for the items list heading on the post type
+                &nbsp;  &nbsp;&nbsp; 'items_list' => _x( 'Books list', 'Screen reader text for the items list heading on the post type
                 listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'textdomain' ),
                 ); <br /> <br />
 
-                $args = array(
-                'labels' => $labels, <br />
-                'public' => true, <br />
-                'publicly_queryable' => true, <br />
-                'show_ui' => true, <br />
-                'show_in_menu' => true, <br />
-                'query_var' => true, <br />
-                'rewrite' => array( 'slug' => 'book' ), <br />
-                'capability_type' => 'post', <br />
-                'has_archive' => true, <br />
-                'hierarchical' => false, <br />
-                'menu_position' => null, <br />
-                'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ), <br />
-                ); <br /> <br />
+              &nbsp;&nbsp;  $args = array(
+                &nbsp;  &nbsp;&nbsp; 'labels' => $labels, <br />
+                &nbsp;  &nbsp;&nbsp; 'public' => true, <br />
+                &nbsp;  &nbsp;&nbsp; 'publicly_queryable' => true, <br />
+                &nbsp;  &nbsp;&nbsp; 'show_ui' => true, <br />
+                &nbsp;  &nbsp;&nbsp; 'show_in_menu' => true, <br />
+                &nbsp;  &nbsp;&nbsp; 'query_var' => true, <br />
+                &nbsp;  &nbsp;&nbsp; 'rewrite' => array( 'slug' => 'book' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'capability_type' => 'post', <br />
+                &nbsp;  &nbsp;&nbsp; 'has_archive' => true, <br />
+                &nbsp;  &nbsp;&nbsp; 'hierarchical' => false, <br />
+                &nbsp;  &nbsp;&nbsp; 'menu_position' => null, <br />
+                &nbsp;  &nbsp;&nbsp; 'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ), <br />
+             &nbsp;&nbsp; ); <br /> <br />
 
                 register_post_type( 'book', $args ); <br />
                 } <br />
