@@ -1,45 +1,869 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head> 
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Learn With Rafiul   </title>
+  <link rel="shortcut icon" href="img/wordpress.png" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/prism.css">
+  <link rel="stylesheet" href="style.css">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-       
+</head>
 
-    <div class="b-example-divider"></div>
+<body>
 
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
-      <h1 class="display-4 fw-bold"> ওয়ার্ডপ্রেস থিম ডেভেলপমেন্ট </h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">
-            ওয়ার্ডপ্রেস হল একটি সিএমএস (CMS) বা কন্টেন্ট ম্যানেজমেন্ট সিস্টেম। আরেকটু বিশদ বলতে গেলে, ওয়ার্ডপ্রেস হল ফ্রী ও ওপেনসোর্স ব্লগিং টুল এবং একটি শক্তিশালী কন্টেন্ট ম্যানেজমেন্ট সিস্টেম যা পিএইচপি এবং মাইএসকিউএল এর উপর ভিত্তি করে তৈরিকৃত।
-        </p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-        </div>
+
+  <div class="b-example-divider"></div>
+
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold"> ওয়ার্ডপ্রেস থিম ডেভেলপমেন্ট </h1>
+    <h2 class="display-10 pt-2 pb-2 fw-bold"> ওয়ার্ডপ্রেস থিম এ ব্যবহিত চিটশিট </h2>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+        ওয়ার্ডপ্রেস হল একটি সিএমএস (CMS) বা কন্টেন্ট ম্যানেজমেন্ট সিস্টেম। আরেকটু বিশদ বলতে গেলে, ওয়ার্ডপ্রেস হল ফ্রী ও
+        ওপেনসোর্স ব্লগিং টুল এবং একটি শক্তিশালী কন্টেন্ট ম্যানেজমেন্ট সিস্টেম যা পিএইচপি এবং মাইএসকিউএল এর উপর ভিত্তি
+        করে তৈরিকৃত।
+      </p>
+
+    </div>
+    <div class="overflow-hidden" style="max-height: 40vh;">
+      <div class="container px-5">
+        <img src="img/banner.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700"
+          height="500" loading="lazy">
       </div>
-      <div class="overflow-hidden" style="max-height: 40vh;">
-        <div class="container px-5">
-          <img src="img/banner.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+    </div>
+  </div>
+
+  <div class="main_wrapper">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xl-12" id="h1">
+
+          <header class="pb-3 mb-4 border-bottom ">
+            <a href="/" style="pointer-events: none" class="d-flex align-items-center text-dark text-decoration-none">
+              <img src="img/wordpress.png" alt="">
+              <span class="fs-4"> ওয়ার্ডপ্রেস থিম বেসিক টেমপ্লেট ফাইল [ Template Files ] </span>
+            </a>
+          </header>
+
+          <div class="  p-10 bg-light border   shadow p-3 mb-3 bg-body rounded">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">টেম্পলেট ফাইল নাম </th>
+                  <th scope="col">টেম্পলেট ফাইল ব্যবহার </th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">index.php</th>
+                  <td> INDEX.PHP ফাইলকে স্ট্যাটিক হোম অথবা ব্লগকে পেজ জন্য ব্যবহার করা হয় </td>
+                </tr>
+                <tr>
+                  <th scope="row">style.css</th>
+                  <td> থিম নাম , থিম এর অথর নাম , থিম ক্যাটাগরি সহ , থিম এর ডিটেলস লিখতে স্টাইল STYLE.CSS ফাইল ব্যবহার
+                    করা হয় . </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">page.php</th>
+                  <td> হোম ও ব্লগ পেজ ছাড়া বাকি পেজ জন্য PAGE.PHP ব্যবহার করা হয় </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">single.php</th>
+                  <td> ওয়ার্ডপ্রেস এর পোস্টকে বিস্তারিত দেখানোর জন্য SINGLE.PHP ব্যবহার করা হয় </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">archive.php</th>
+                  <td>ওয়ার্ডপ্রেস এর পোস্টকে অথর , ক্যাটাগরি , তারিখ হিসাবে এ আলাদা দেখানো জন্য ACCHIVE.PHP ব্যবহার করা
+                    হয় </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">search.php</th>
+                  <td>ওয়ার্ডপ্রেস থিম এ পোস্ট পেজ অথবা নিদিষ্ট কনটেন্ট দেখানোর জন্য SEARCH.PHP ব্যবহার করা হয়</td>
+                </tr>
+                <tr>
+                  <th scope="row">searchform.php</th>
+                  <td>সার্চ ফর্ম ফাইল</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">404.php</th>
+                  <td> ওয়ার্ডপ্রেস থিম এ পোস্ট পেজ অথবা নিদিষ্ট কনটেন্ট সার্চ করে খুঁজে না পাওয়া গেলে 404.php ব্যবহার
+                    করা হয়</td>
+                </tr>
+
+
+                <tr>
+                  <th scope="row">header.php</th>
+                  <td> একটি ওয়েবসাইট এ হেডার পার্ট একই হয় , তাই হেডার সব পেজ এ বার বার লোড না করে হেডার পেজ হতে একবার
+                    লোড করা জন্য হেডার পেজ ব্যবহার করা হয় </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">footer.php</th>
+                  <td>একটি ওয়েবসাইট এ ফুটার পার্ট একই হয় , তাই ফুটার সব পেজ এ বার বার লোড না করে ফুটার পেজ হতে একবার লোড
+                    করা জন্য ফুটার পেজ ব্যবহার করা হয় </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">sidebar.php</th>
+                  <td> একটি ওয়েবসাইট এ সাইডবার পার্ট একই হয় , তাই সাইডবার সব পেজ এ বার বার লোড না করে , সাইডবার পেজ হতে
+                    একবার লোড করা জন্য সাইডবার পেজ ব্যবহার করা হয় . </td>
+                </tr>
+
+
+              </tbody>
+            </table>
+          </div>
         </div>
+
+        <div class="col-xl-6" id="h2">
+
+          <header class="pb-3 mb-4 border-bottom ">
+            <a href="/" style="pointer-events: none" class="d-flex align-items-center text-dark text-decoration-none">
+              <img src="img/wordpress.png" alt="">
+              <span class="fs-4"> Main Stylesheet (style.css) </span>
+            </a>
+          </header>
+
+          <div class=" bg-color p-10 bg-light border   shadow p-3 mb-3 bg-body rounded">
+            <div class="card">
+              <code class="language-php">
+                /*
+                Theme Name: Twenty Twenty <br>
+                Theme URI: https://wordpress.org/themes/twentytwenty/ <br>
+                Author: the WordPress team <br>
+                Author URI: https://wordpress.org/ <br>
+                Description: Our default theme for 2020 <br>
+                Tags: blog, one-column, custom-background, <br>
+                Version: 1.3 <br>
+                Requires at least: 5.0 <br>
+                Tested up to: 5.4 <br>
+                Requires PHP: 7.0 <br>
+                License: GNU General Public License v2 or later <br>
+                License URI: http://www.gnu.org/licenses/gpl-2.0.html <br>
+                Text Domain: twentytwenty <br>
+                This theme, like WordPress, is licensed under the GPL. <br>
+                Use it to make something cool, have fun, and share what you've learned with others. <br>
+                */
+              </code>
+
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-12" id="h1">
+
+          <header class="pb-3 mb-4 border-bottom ">
+            <a href="/" style="pointer-events: none" class="d-flex align-items-center text-dark text-decoration-none">
+              <img src="img/wordpress.png" alt="">
+              <span class="fs-4"> টেমপ্লেট এর জন্য পিএইচপি টুকিটাকি FUNCTION </span>
+            </a>
+          </header>
+          <div class="row" data-masonry='{"percentPosition": true }'>
+
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> wp_head(); | wp_footer(); </h5>
+                  <p class="card-text"> একটি থিম এর সকল স্টাইলশিট ও স্ক্রিপ্ট হেড ট্যাগ ভিতরে রান করার জন্য wp_head(); /
+                    wp_footer(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> get_header(); </h5>
+                  <p class="card-text"> header.php ফাইল এর কন্টেন্ট পেজ এ দেখানোর জন্য get_header(); function ব্যবহার
+                    করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> get_footer(); </h5>
+                  <p class="card-text"> footer.php ফাইল এর কন্টেন্ট পেজ এ দেখানোর জন্য get_footer(); function ব্যবহার
+                    করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> get_sidebar(); </h5>
+                  <p class="card-text"> sidebar.php ফাইল এর কন্টেন্ট পেজ এ দেখানোর জন্য get_sidebar(); function ব্যবহার
+                    করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_title(); </h5>
+                  <p class="card-text"> একটি নির্দিষ্ট পোস্ট বা পৃষ্ঠার শিরোনাম দেখানোর জন্য the_title(); function
+                    ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_content(); </h5>
+                  <p class="card-text"> একটি নির্দিষ্ট পোস্ট বা পৃষ্ঠার বিষয়বস্তু দেখানোর জন্য the_content(); function
+                    ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_permalink(); </h5>
+                  <p class="card-text"> একটি নির্দিষ্ট পোস্ট বা পৃষ্ঠার , সিঙ্গেল পোস্ট অথবা সিঙ্গেল পৃষ্ঠার দেখানোর
+                    জন্য the_permalink(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> bloginfo('name'); </h5>
+                  <p class="card-text"> সাইটের নাম দেখানোর জন্য bloginfo('name'); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> bloginfo('description'); </h5>
+                  <p class="card-text"> সাইটের বর্ণনা দেখানোর জন্য bloginfo('description'); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_category(); </h5>
+                  <p class="card-text"> একটি নির্দিষ্ট পোস্ট বা পৃষ্ঠার ক্যাটাগরি দেখানোর জন্য the_category(); function
+                    ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_time(); </h5>
+                  <p class="card-text"> তারিখ '10 - 19 - 07 ' ফরম্যাট দেখানোর জন্য the_time(); function ব্যবহার করা হয়
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_author(); </h5>
+                  <p class="card-text"> একটি নির্দিষ্ট পোস্ট বা পৃষ্ঠার লেখক দেখানোর জন্য the_author(); function ব্যবহার
+                    করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> comments_template(); </h5>
+                  <p class="card-text"> comments.php পিএইচপি ফাইল এর কন্টেন্ট দেখানোর জন্য comments_template(); function
+                    ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> comments_popup_link(); </h5>
+                  <p class="card-text"> পোস্টে মন্তব্যের জন্য লিঙ্ক জন্য comments_popup_link(); function ব্যবহার করা হয়
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_ID(); </h5>
+                  <p class="card-text"> একটি নির্দিষ্ট পোস্ট বা পৃষ্ঠার আইডি জন্য the_ID(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_search_query(); </h5>
+                  <p class="card-text"> অনুসন্ধান ফর্মের জন্য ভ্যালু জন্য the_ID(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> wp_title(); </h5>
+                  <p class="card-text"> নির্দিষ্ট পোস্ট বা পৃষ্ঠার শিরোনাম জন্য wp_title(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> get_stylesheet_directory_uri(); </h5>
+                  <p class="card-text">style.css ফাইল এর অবস্থান জন্য get_stylesheet_directory_uri(); function ব্যবহার
+                    করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> get_site_url(); </h5>
+                  <p class="card-text"> সাইটের Exact URL জন্য get_site_url(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> get_search_form(); </h5>
+                  <p class="card-text"> সার্চ ফর্ম জন্য get_search_form(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_excerpt(); </h5>
+                  <p class="card-text"> পোষ্টের এক্সযার্প্ট কন্টেন্ট জন্য the_excerpt(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_excerpt(); </h5>
+                  <p class="card-text"> পোষ্টের এক্সযার্প্ট কন্টেন্ট জন্য the_excerpt(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> edit_post_link(); </h5>
+                  <p class="card-text"> পোষ্টের ইডিট লিংক জন্য edit_post_link(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_tags(); </h5>
+                  <p class="card-text"> পোষ্টের ট্যাগ জন্য the_tags(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> next_post_link(' %link '); </h5>
+                  <p class="card-text"> পরের পোষ্টের লিংক জন্য next_post_link(' %link '); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> previous_post_link(' %link '); </h5>
+                  <p class="card-text"> আগের পোষ্টের লিংক জন্য previous_post_link(' %link '); function ব্যবহার করা হয়
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_author_firstname(); </h5>
+                  <p class="card-text"> পোষ্টের লেখকের প্রথম নাম জন্য previous_post_link(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_author_lastname(); </h5>
+                  <p class="card-text"> পোষ্টের লেখকের শেষ নাম জন্য the_author_lastname(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_author_ID(); </h5>
+                  <p class="card-text"> পোষ্টের লেখকের আইডি- জন্য the_author_ID(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_author_email(); </h5>
+                  <p class="card-text"> পোষ্টের লেখকের ইমেইল জন্য the_author_email(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> the_author_url(); </h5>
+                  <p class="card-text"> লেখকের লিংক জন্য the_author_url(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> single_cat_title(); </h5>
+                  <p class="card-text"> ক্যটাগরির টাইটেল জন্য single_cat_title(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> category_description(); </h5>
+                  <p class="card-text"> ক্যটাগরির র্বণণা জন্য category_description(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> wp_list_authors(); </h5>
+                  <p class="card-text"> পোষ্টের লেখকের লিষ্ট জন্য wp_list_authors(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> wp_list_pages(); </h5>
+                  <p class="card-text"> পাতার লিষ্ট জন্য wp_list_pages(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> wp_list_cats(); </h5>
+                  <p class="card-text">ক্যটাগরির জন্য wp_list_cats(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> get_calender(); </h5>
+                  <p class="card-text"> ক্যালেন্ডার জন্য get_calender(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> wp_get_archives(); </h5>
+                  <p class="card-text"> আর্কাইভের লিষ্ট-জন্য wp_get_archives(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> posts_nav_link(); </h5>
+                  <p class="card-text"> সাইটের নেভিগেশন লিংক জন্য posts_nav_link(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> wp_register(); </h5>
+                  <p class="card-text"> সাইটের নিবন্ধন জন্য wp_register(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> wp_login(); </h5>
+                  <p class="card-text"> সাইটের লগিন জন্য wp_login(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> wp_logout(); </h5>
+                  <p class="card-text"> সাইটের লগআউট- জন্য wp_logout(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> comment_date(); </h5>
+                  <p class="card-text"> ন্তব্যের তারিখ জন্য comment_date(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> comment_time(); </h5>
+                  <p class="card-text"> ন্তব্যের সময় জন্য comment_time(); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"> echo date('Y'); </h5>
+                  <p class="card-text"> ফুটারে কপিরাইটস এ সাল দেখানোর জন্য echo date('Y'); function ব্যবহার করা হয় </p>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+
+        <div class="col-xl-12" id="h1">
+
+          <header class="pb-3 mb-4 border-bottom ">
+            <a href="/" style="pointer-events: none" class="d-flex align-items-center text-dark text-decoration-none">
+              <img src="img/wordpress.png" alt="">
+              <span class="fs-4"> Theme Functions [ after_setup_theme ] </span>
+            </a>
+          </header>
+
+          <div class="col-xl-12 pt-10">
+            <div class="card">
+              <code class="language-php">
+
+                if ( ! function_exists( 'myfirsttheme_setup' ) ) : <br> <br>
+
+                &nbsp; function myfirsttheme_setup() { <br> <br>
+                  &nbsp;&nbsp;/** automatic feed link*/ <br>
+                  &nbsp;&nbsp;add_theme_support( 'automatic-feed-links' ); <br> <br>
+
+                  &nbsp;&nbsp;/** tag-title **/ <br>
+                  &nbsp;&nbsp;add_theme_support( 'title-tag' ); <br> <br>
+
+                  &nbsp;&nbsp;/** post formats */ <br>
+                  &nbsp;&nbsp;$post_formats = array('aside','image','gallery','video','audio','link','quote','status'); <br>
+                  &nbsp;&nbsp;add_theme_support( 'post-formats', $post_formats); <br> <br>
+
+                  &nbsp;&nbsp;/** post thumbnail **/ <br>
+                  &nbsp;&nbsp;add_theme_support( 'post-thumbnails' ); <br> <br>
+
+                  &nbsp;&nbsp;/** HTML5 support **/ <br>
+                  &nbsp;&nbsp;add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' )
+                  &nbsp;&nbsp;); <br> <br>
+
+                  &nbsp;&nbsp;/** refresh widgest **/ <br>
+                  &nbsp;&nbsp;add_theme_support( 'customize-selective-refresh-widgets' ); <br> <br>
+
+                  &nbsp;&nbsp;/** custom background **/ <br>
+                  &nbsp;&nbsp;$bg_defaults = array( <br>
+                  &nbsp; &nbsp;&nbsp; 'default-image' => '', <br>
+                  &nbsp; &nbsp;&nbsp;'default-preset' => 'default', <br>
+                  &nbsp; &nbsp;&nbsp;'default-size' => 'cover', <br>
+                  &nbsp; &nbsp;&nbsp;'default-repeat' => 'no-repeat', <br>
+                  &nbsp; &nbsp;&nbsp;'default-attachment' => 'scroll', <br>
+                &nbsp;&nbsp; ); <br>
+               &nbsp;&nbsp; add_theme_support( 'custom-background', $bg_defaults ); <br> <br>
+
+               &nbsp;&nbsp; /** custom header **/ <br>
+               &nbsp;  &nbsp;&nbsp;$header_defaults = array( <br>
+               &nbsp;  &nbsp;&nbsp;'default-image' => '', <br>
+               &nbsp;  &nbsp;&nbsp; 'width' => 300, <br>
+               &nbsp;  &nbsp;&nbsp; 'height' => 60, <br>
+               &nbsp;  &nbsp;&nbsp; 'flex-height' => true, <br>
+               &nbsp;  &nbsp;&nbsp; 'flex-width' => true, <br>
+               &nbsp;  &nbsp;&nbsp; 'default-text-color' => '', <br>
+               &nbsp;  &nbsp;&nbsp; 'header-text' => true, <br>
+               &nbsp;  &nbsp;&nbsp;  'uploads' => true, <br>
+               &nbsp;&nbsp;); <br>
+               &nbsp;&nbsp; add_theme_support( 'custom-header', $header_defaults ); <br> <br>
+
+          &nbsp;&nbsp; /** custom log **/ <br>
+             &nbsp;&nbsp;  add_theme_support( 'custom-logo', array( <br>
+               &nbsp;  &nbsp;&nbsp;  'height' => 60, <br>
+               &nbsp;  &nbsp;&nbsp;  'width' => 400, <br>
+               &nbsp;  &nbsp;&nbsp;   'flex-height' => true, <br>
+               &nbsp;  &nbsp;&nbsp;   'flex-width' => true, <br>
+               &nbsp;  &nbsp;&nbsp;   'header-text' => array( 'site-title', 'site-description' ), <br>
+              &nbsp;&nbsp;   )); <br>
+              &nbsp;&nbsp;  endif; // myfirsttheme_setup <br>
+               &nbsp;&nbsp;  add_action( 'after_setup_theme', 'myfirsttheme_setup' ); <br>
+              </code>
+
+
+            </div>
+
+
+
+
+          </div>
+
+
+        </div>
+
+
+        <div class="col-xl-12" id="h1">
+          <br>
+          <header class="pb-3 mb-4 border-bottom ">
+            <a href="/" style="pointer-events: none" class="d-flex align-items-center text-dark text-decoration-none">
+              <img src="img/wordpress.png" alt="">
+              <span class="fs-4"> Theme Functions [ register_my_menus ] </span>
+            </a>
+          </header>
+          <br>
+
+          <div class="col-xl-12 pt-10">
+            <div class="card">
+              <code class="language-php">
+                if ( ! function_exists( 'mytheme_register_nav_menu' ) ) { <br />
+
+               &nbsp;&nbsp; function mytheme_register_nav_menu(){ <br /> <br />
+                &nbsp;  &nbsp;&nbsp;/** Multiple Menus **/ <br>
+                  &nbsp;&nbsp; register_nav_menus( array( <br />
+                &nbsp;  &nbsp;&nbsp;'primary_menu' => __( 'Primary Menu', 'text_domain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'footer_menu' => __( 'Footer Menu', 'text_domain' ), <br />
+                 &nbsp;&nbsp; ) ); <br /> <br />
+
+                } <br />
+                add_action( 'after_setup_theme', 'mytheme_register_nav_menu', 0 ); 
+                }<br />
+              </code>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-xl-12" id="h1">
+          <br>
+          <header class="pb-3 mb-4 border-bottom ">
+            <a href="/" style="pointer-events: none" class="d-flex align-items-center text-dark text-decoration-none">
+              <img src="img/wordpress.png" alt="">
+              <span class="fs-4"> Theme Functions [ register_post_type ] </span>
+            </a>
+          </header>
+          <br>
+
+          <div class="col-xl-12 pt-10">
+            <div class="card">
+              <code class="language-php">
+                /** <br />
+                * Register a custom post type called "book". <br />
+                * <br />
+                * @see get_post_type_labels() for label keys. <br />
+                */ <br /> <br />
+                function wpdocs_codex_book_init() { <br /> <br />
+                $labels = array(
+                'name' => _x( 'Books', 'Post type general name', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'singular_name' => _x( 'Book', 'Post type singular name', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'menu_name' => _x( 'Books', 'Admin Menu text', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'name_admin_bar' => _x( 'Book', 'Add New on Toolbar', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'add_new' => __( 'Add New', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'add_new_item' => __( 'Add New Book', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'new_item' => __( 'New Book', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'edit_item' => __( 'Edit Book', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'view_item' => __( 'View Book', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'all_items' => __( 'All Books', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'search_items' => __( 'Search Books', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'parent_item_colon' => __( 'Parent Books:', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'not_found' => __( 'No books found.', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'not_found_in_trash' => __( 'No books found in Trash.', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'featured_image' => _x( 'Book Cover Image', 'Overrides the “Featured Image” phrase for this post type.
+                Added in 4.3', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'set_featured_image' => _x( 'Set cover image', 'Overrides the “Set featured image” phrase for this post
+                type. Added in 4.3', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'remove_featured_image' => _x( 'Remove cover image', 'Overrides the “Remove featured image” phrase for
+                this post type. Added in 4.3', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'use_featured_image' => _x( 'Use as cover image', 'Overrides the “Use as featured image” phrase for this
+                post type. Added in 4.3', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'archives' => _x( 'Book archives', 'The post type archive label used in nav menus. Default “Post
+                Archives”. Added in 4.4', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'insert_into_item' => _x( 'Insert into book', 'Overrides the “Insert into post”/”Insert into page”
+                phrase (used when inserting media into a post). Added in 4.4', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'uploaded_to_this_item' => _x( 'Uploaded to this book', 'Overrides the “Uploaded to this post”/”Uploaded
+                to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'filter_items_list' => _x( 'Filter books list', 'Screen reader text for the filter links heading on the
+                post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'textdomain'
+                ), <br />
+                &nbsp;  &nbsp;&nbsp; 'items_list_navigation' => _x( 'Books list navigation', 'Screen reader text for the pagination heading
+                on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4',
+                'textdomain' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'items_list' => _x( 'Books list', 'Screen reader text for the items list heading on the post type
+                listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'textdomain' ),
+                ); <br /> <br />
+
+              &nbsp;&nbsp;  $args = array(
+                &nbsp;  &nbsp;&nbsp; 'labels' => $labels, <br />
+                &nbsp;  &nbsp;&nbsp; 'public' => true, <br />
+                &nbsp;  &nbsp;&nbsp; 'publicly_queryable' => true, <br />
+                &nbsp;  &nbsp;&nbsp; 'show_ui' => true, <br />
+                &nbsp;  &nbsp;&nbsp; 'show_in_menu' => true, <br />
+                &nbsp;  &nbsp;&nbsp; 'query_var' => true, <br />
+                &nbsp;  &nbsp;&nbsp; 'rewrite' => array( 'slug' => 'book' ), <br />
+                &nbsp;  &nbsp;&nbsp; 'capability_type' => 'post', <br />
+                &nbsp;  &nbsp;&nbsp; 'has_archive' => true, <br />
+                &nbsp;  &nbsp;&nbsp; 'hierarchical' => false, <br />
+                &nbsp;  &nbsp;&nbsp; 'menu_position' => null, <br />
+                &nbsp;  &nbsp;&nbsp; 'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ), <br />
+             &nbsp;&nbsp; ); <br /> <br />
+
+                register_post_type( 'book', $args ); <br />
+                } <br />
+
+                add_action( 'init', 'wpdocs_codex_book_init' ); <br />
+              </code>
+            </div>
+          </div>
+
+          <div class="col-xl-12 pt-10">
+            <div class="card">
+              <code class="language-php">
+                 
+              </code>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+    <div class="footer_area">
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <span class="text-muted">© 2021 Company, Inc</span>
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#twitter"></use>
+                </svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram"></use>
+                </svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook"></use>
+                </svg></a></li>
+          </ul>
+        </footer>
       </div>
     </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+      window.Prism = window.Prism || {};
+      window.Prism.manual = true;
+    </script>
+    <script src="prism.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async>
+    </script>
+
+    <script src="js/prism.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-  </body>
-</html> 
+</body>
+
+</html>
